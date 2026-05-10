@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Analitica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="top">
+        <img src="imgs/logo.webp" alt="triangulo com um triangulo menor dentro">
+        <div class="header-title">
+            <h1>Geometria Analitica</h1>
+            <h2>Triangulos</h2>    
+        </div>
+    </header>
+    <nav>
+        <a href="#top">Início</a>
+
+        <a href="#main">Conteúdo</a>
+        
+        <a href="#gallery">Galeria</a>
+        
+        <a href="#bottom">Sobre o autor</a>
+    </nav>
+    <main>
+        <section id="main" class="main">
+            <section id="area-por-coordenadas">
+                <h2>Área do Triângulo por Coordenadas</h2>
+                <p>Dado um triângulo com vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃) no plano cartesiano, 
+                    é possível calcular sua área sem medir lados ou ângulos — apenas com as 
+                    coordenadas dos vértices.</p>
+                
+                <h3>Como calcular</h3>
+                    <p>A fórmula utiliza o conceito de determinante de uma matriz 3×3:</p>
+                    <p>A área é dada pelo módulo de:</p>
+                    <p class="math-expression">½ · |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|</p>
+                    <p>O valor absoluto garante que a área seja sempre positiva, 
+                        independente da ordem em que os vértices são listados.</p>
+                <h3>Exemplo prático</h3>    
+                    <p>Considere o triângulo com vértices A(0, 0), B(4, 0) e C(0, 3):</p>
+                    <p class="math-expression">½ · |0(0 - 3) + 4(3 - 0) + 0(0 - 0)| = ½ · |12| = 6 unidades²</p>
+            </section> 
+            <section id="pontos-notaveis">
+                <h2>Pontos Notáveis do Triângulo</h2>
+                <p>Os pontos notáveis são pontos especiais obtidos a partir das retas notáveis de um triângulo. Com geometria analítica, 
+                    é possível calcular suas coordenadas exatas a partir dos vértices.</p>
+                <section id="baricentro">
+                    <h3>Baricentro</h3>
+                    <p>O baricentro é o ponto de encontro das medianas do triângulo — segmentos que ligam cada vértice 
+                        ao ponto médio do lado oposto. Ele representa o centro de massa do triângulo.</p>
+    
+                    <p>Dado um triângulo com vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃), o baricentro G é calculado por:</p>
+
+                    <p class="math-expression">G = ((x₁ + x₂ + x₃) / 3, (y₁ + y₂ + y₃) / 3)</p>
+                    <p>Exemplo: Para A(0, 0), B(6, 0) e C(0, 6), o baricentro é G(2, 2).</p>
+                    <img src="imgs/baricentro.webp" alt="Imagem representando o baricentro">
+                </section>
+                <section id="circuncentro">
+                    <h3>Circuncentro</h3>
+                    <p>O circuncentro é o ponto de encontro das mediatrizes do triângulo — retas perpendiculares a cada lado passando pelo seu ponto médio.
+                         É o centro da circunferência circunscrita ao triângulo.</p>
+                    <p>Para encontrá-lo analiticamente, resolve-se um sistema de equações formado pelas mediatrizes de dois lados quaisquer do triângulo.
+                         O circuncentro pode estar dentro, fora ou sobre o triângulo, dependendo do tipo.</p>
+                    <img src="imgs/circuncentro.webp" alt="Imagem representando o circuncentro">
+                </section>
+                <section id="ortocentro">
+                    <h3>Ortocentro</h3>
+                    <p>O ortocentro é o ponto de encontro das alturas do triângulo — segmentos perpendiculares a cada lado traçados a partir do vértice oposto.</p>
+                    <p>Analogamente ao circuncentro, encontra-se o ortocentro resolvendo o sistema formado pelas equações de 
+                        duas alturas. Em triângulos acutângulos está dentro, em obtusângulos está fora e em retângulos 
+                        coincide com o vértice do ângulo reto.</p>
+                    <img src="imgs/ortocentro.webp" alt="Imagem representando o ortocentro">
+                </section>
+            </section>
+            <section id="classificao-por-coordenadas">
+                <h2>Classificação do Triângulo por Coordenadas</h2>
+                    <p>Com as coordenadas dos vértices, é possível classificar qualquer triângulo usando apenas a fórmula da distância entre dois pontos:</p>
+                    <p class="math-expression">d = √((x₂ - x₁)² + (y₂ - y₁)²)</p>
+                <h3>Quanto aos lados</h3>
+                    <p>Calculando os três lados do triângulo:</p>
+                    <ul>
+                        <li>Se os três lados são iguais → Equilátero</li>
+                        <li>Se dois lados são iguais → Isósceles</li>
+                        <li>Se todos os lados são diferentes → Escaleno</li>
+                    </ul>  
+                <h3>Quanto aos ângulos</h3>
+                    <p>Após obter os comprimentos dos lados a, b e c, aplica-se o teorema de Pitágoras para classificar:</p>
+                    <ul>
+                        <li>Se a² + b² &equals; c² → Retângulo</li>
+                        <li>Se a² + b² &gt; c² → Acutângulo</li>
+                        <li>Se a² + b² &lt; c² → Obtusângulo</li>
+                    </ul>
+                    <p>Exemplo: Para A(0, 0), B(3, 0) e C(0, 4), os lados medem 3, 4 e 5. Como 3² + 4² = 5², o triângulo é retângulo e escaleno.</p>
+            </section>
+            <a href="#top">Voltar ao topo</a>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Galeria de Imagens geradas no Geogebra</h2>
+            <div class="images">
+                <img src="imgs/gallery/triangulo_acutangulo.png" alt="Triangulo acutângulo">
+                <img src="imgs/gallery/triangulo_obsutangulo.png" alt="Triangulo obtusângulo">
+                <img src="imgs/gallery/triangulo_retangulo.png" alt="Triangulo retangulo">
+
+                <img src="imgs/gallery/triangulo_escaleno.png" alt="Triangulo escaleno" >
+                <img src="imgs/gallery/triangulo_equilatero.png" alt="Triangulo equilatero" >
+                <img src="imgs/gallery/triangulo_isoceles.png" alt="Triangulo isoceles" >
+            </div>
+            <a href="#top">Voltar ao topo</a>
+        </section>
+    </main>
+    <footer id="bottom">
+        <p>Caetano</p>
+        <p>2025311434</p>
+        <p><a href="https://github.com/caetanoag">Github</a></p>
+    </footer>
+    
+
+</body>
+</html>
