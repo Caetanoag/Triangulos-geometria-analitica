@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	background-color: var(--primary-color);
+	background-color: #1d3b6b;
 	color: var(--text);
 	text-align: center;
 }
@@ -26,7 +26,6 @@ footer {
 	max-width: 900px;
 	margin-inline: auto;
 }
-
 header,
 footer {
 	background-color: var(--text);
@@ -53,6 +52,7 @@ section a {
 a:hover {
 	transform: scale(1.2);
 }
+
 nav {
 	width: 100%;
 	display: flex;
@@ -62,8 +62,6 @@ nav {
 	justify-content: center;
 }
 nav {
-	background-color: var(--primary-color);
-
 	position: sticky;
 	top: 0;
 }
@@ -111,4 +109,25 @@ body ul {
 	padding: 20px;
 	border: 2px solid black;
 	border-radius: 20px;
+}
+.section-math {
+	background-color: var(--primary-color);
+	padding: 20px;
+	border: 2px solid black;
+	
+}
+main .main-section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	gap: 20px;
+}
+.fontes {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.fontes .links{
+	display: flex;
+	flex-direction: row;
 }

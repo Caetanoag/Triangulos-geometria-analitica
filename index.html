@@ -12,7 +12,7 @@
 </head>
 <body>
     <header id="top">
-        <img src="imgs/logo.webp" alt="triangulo com um triangulo menor dentro">
+        <img src="imgs/logo.png" alt="triangulo com um triangulo menor dentro">
         <div class="header-title">
             <h1>Geometria Analitica</h1>
             <h2>Triangulos</h2>    
@@ -21,15 +21,15 @@
     <nav>
         <a href="#top">Início</a>
 
-        <a href="#main">Conteúdo</a>
+        <a href="#main-section">Conteúdo</a>
         
         <a href="#gallery">Galeria</a>
         
         <a href="#bottom">Sobre o autor</a>
     </nav>
     <main>
-        <section id="main" class="main">
-            <section id="area-por-coordenadas">
+        <section id="main-section" class="main-section">
+            <section id="area-por-coordenadas" class="section-math">
                 <h2>Área do Triângulo por Coordenadas</h2>
                 <p>Dado um triângulo com vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃) no plano cartesiano, 
                     é possível calcular sua área sem medir lados ou ângulos — apenas com as 
@@ -45,7 +45,7 @@
                     <p>Considere o triângulo com vértices A(0, 0), B(4, 0) e C(0, 3):</p>
                     <p class="math-expression">½ · |0(0 - 3) + 4(3 - 0) + 0(0 - 0)| = ½ · |12| = 6 unidades²</p>
             </section> 
-            <section id="pontos-notaveis">
+            <section id="pontos-notaveis" class="section-math">
                 <h2>Pontos Notáveis do Triângulo</h2>
                 <p>Os pontos notáveis são pontos especiais obtidos a partir das retas notáveis de um triângulo. Com geometria analítica, 
                     é possível calcular suas coordenadas exatas a partir dos vértices.</p>
@@ -58,7 +58,7 @@
 
                     <p class="math-expression">G = ((x₁ + x₂ + x₃) / 3, (y₁ + y₂ + y₃) / 3)</p>
                     <p>Exemplo: Para A(0, 0), B(6, 0) e C(0, 6), o baricentro é G(2, 2).</p>
-                    <img src="imgs/baricentro.webp" alt="Imagem representando o baricentro">
+                    <img src="imgs/baricentro.png" alt="Imagem representando o baricentro">
                 </section>
                 <section id="circuncentro">
                     <h3>Circuncentro</h3>
@@ -74,10 +74,10 @@
                     <p>Analogamente ao circuncentro, encontra-se o ortocentro resolvendo o sistema formado pelas equações de 
                         duas alturas. Em triângulos acutângulos está dentro, em obtusângulos está fora e em retângulos 
                         coincide com o vértice do ângulo reto.</p>
-                    <img src="imgs/ortocentro.webp" alt="Imagem representando o ortocentro">
+                    <img src="imgs/ortocentro.png" alt="Imagem representando o ortocentro">
                 </section>
             </section>
-            <section id="classificao-por-coordenadas">
+            <section id="classificao-por-coordenadas" class="section-math">
                 <h2>Classificação do Triângulo por Coordenadas</h2>
                     <p>Com as coordenadas dos vértices, é possível classificar qualquer triângulo usando apenas a fórmula da distância entre dois pontos:</p>
                     <p class="math-expression">d = √((x₂ - x₁)² + (y₂ - y₁)²)</p>
@@ -111,6 +111,16 @@
                 <img src="imgs/gallery/triangulo_isoceles.png" alt="Triangulo isoceles" >
             </div>
             <a href="#top">Voltar ao topo</a>
+        </section>
+        <section id="fontes" class="fontes">
+            <h1>Fontes</h1>
+            <div class="links">
+                <p><a href="https://escolaeducacao.com.br/baricentro-de-um-triangulo/">Imagem 1</a></p>
+                <p><a href="https://mundoeducacao.uol.com.br/matematica/pontos-notaveis-triangulo.htm">Imagem 2</a></p>
+                <p><a href="https://br.neurochispas.com/geometria/como-encontrar-o-ortocentro-de-um-triangulo-passo-a-passo/">Imagem 3</a></p>
+                <p><a href="https://www.pngegg.com/pt/png-hyuki">Logo</a></p>
+            </div>
+            
         </section>
     </main>
     <footer id="bottom">
