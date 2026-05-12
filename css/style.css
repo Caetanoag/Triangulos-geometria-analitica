@@ -15,40 +15,48 @@ body {
 	color: var(--text);
 	text-align: center;
 }
+
 header {
 	word-break: break-word;
+}
+header img {
+	width: clamp(3rem, 10vw, 8rem);
+	height: auto;
 }
 header,
 nav,
 main,
 footer {
 	width: 100%;
-	max-width: 900px;
+	max-width: min(90%, 56.25rem);
 	margin-inline: auto;
 }
+
 header,
 footer {
 	background-color: var(--text);
 	color: var(--primary-color);
 	display: flex;
-	gap: 20px;
+	gap: 1rem;
 	align-items: center;
 	justify-content: center;
 }
+
 section {
 	display: flex;
 	flex-direction: column;
 }
+
 section a {
 	background-color: var(--text);
 	color: black;
-	padding: 10px;
+	padding: 0.5rem;
 	text-decoration: none;
-	border-radius: 20px;
-	margin: 40px;
-
+	border-radius: 1rem;
+	margin: 2rem;
 	transition: 0.3s;
 }
+
 a:hover {
 	transform: scale(1.2);
 }
@@ -57,24 +65,23 @@ nav {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 1rem;
 	align-items: center;
 	justify-content: center;
-}
-nav {
 	position: sticky;
 	top: 0;
 }
+
 nav a {
 	background-color: var(--buttons);
 	color: var(--text);
-	padding: 20px;
+	padding: 1rem;
 	text-decoration: none;
-	border-radius: 20px;
-	margin: 20px 0;
-
+	border-radius: 1rem;
+	margin: 1rem 0;
 	transition: 0.2s;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -88,46 +95,52 @@ body ul {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	gap: 20px;
+	gap: 1rem;
 }
+
 .gallery .images {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
 .gallery .images img {
-	flex: 1 1 150px;
-	width: 33%;
+	flex: 1 1 clamp(8rem, 33%, 20rem);
 	height: auto;
 }
 
 .math-expression {
 	background-color: rgba(63, 66, 71, 0.94);
-	padding: 20px;
+	padding: 1rem;
 	border: 2px solid black;
-	border-radius: 20px;
+	border-radius: 1rem;
 }
+
 .section-math {
 	background-color: var(--primary-color);
-	padding: 20px;
+	padding: 1rem;
 	border: 2px solid black;
-	
 }
+
 main .main-section {
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
-	gap: 20px;
+	margin-top: 1rem;
+	gap: 1rem;
 }
+
 .fontes {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
-.fontes .links{
+
+.fontes .links {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
 }
