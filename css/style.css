@@ -19,10 +19,16 @@ body {
 header {
 	word-break: break-word;
 }
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 header img {
 	width: clamp(3rem, 10vw, 8rem);
 	height: auto;
 }
+
 header,
 nav,
 main,
@@ -80,11 +86,6 @@ nav a {
 	border-radius: 1rem;
 	margin: 1rem 0;
 	transition: 0.2s;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
 }
 
 body ul {
