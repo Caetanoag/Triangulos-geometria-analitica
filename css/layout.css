@@ -1,0 +1,88 @@
+/* Define o layout da página, a estrutura principal
+Também define header, nav, main, footer, etc 
+Este arquivo normalmente é único/específico de um projeto 
+e não é reutilizado (Exceto em sites com estrutura semelhante) */
+
+/* Topo fixado com sticky */
+header img {
+	width: clamp(3rem, 10vw, 8rem);
+	height: auto;
+}
+
+header,
+nav,
+main,
+footer {
+	width: 100%;
+	max-width: min(90%, 56.25rem);
+	margin-inline: auto;
+}
+
+header,
+footer {
+	background-color: var(--text);
+	color: var(--primary-color);
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+
+	top: 0;
+}
+
+nav a {
+	background-color: var(--buttons);
+	color: var(--text);
+	padding: 1rem;
+	text-decoration: none;
+	border-radius: 1rem;
+	margin: 1rem 0;
+	transition: 0.2s;
+}
+
+body ul {
+	list-style-position: inside;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+section a {
+	background-color: var(--text);
+	color: black;
+	padding: 0.5rem;
+	text-decoration: none;
+	border-radius: 1rem;
+	margin: 2rem;
+	transition: 0.3s;
+}
+main .main-section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.fontes {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.fontes .links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}

@@ -6,9 +6,7 @@
     <title>Geometria Analitica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header id="top">
@@ -99,9 +97,9 @@
             </section>
             <a href="#top">Voltar ao topo</a>
         </section>
-        <section id="gallery" class="gallery">
+        <section id="gallery">
             <h2>Galeria de Imagens geradas no Geogebra</h2>
-            <div class="images">
+            <div class="gallery">
                 <img src="imgs/gallery/triangulo_acutangulo.png" alt="Triangulo acutângulo">
                 <img src="imgs/gallery/triangulo_obsutangulo.png" alt="Triangulo obtusângulo">
                 <img src="imgs/gallery/triangulo_retangulo.png" alt="Triangulo retangulo">
@@ -121,6 +119,41 @@
                 
             </section>
             <a href="#top">Voltar ao topo</a>
+        </section>
+        <section>
+            <h2>Formulário de Conhecimentos</h2>
+            <fieldset>
+                <legend>Teste seus conhecimentos</legend>
+                    <form action="index.html">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    <br>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    <br>
+                        Quantos lados tem um triangulo?
+                    <br>
+                        <label for="lados">3</label>
+                        <input type="radio" name="lados" id="lados" value="3">
+                        <label for="lados">4</label>
+                        <input type="radio" name="lados" id="lados" value="4">
+                        <label for="lados">12</label>
+                        <input type="radio" name="lados" id="lados" value="12">
+                    <br>
+                        <label for="soma-angulos">Qual a soma dos angulos internos de um triangulo?</label>
+                    <br>
+                        <select name="soma-angulos" id="soma-angulos">
+                            <option value="90-graus">90 graus</option>
+                            <option value="45-graus">45 graus</option>
+                            <option value="120-graus">120 graus</option>
+                            <option value="180-graus">180 graus</option>
+                        </select>
+                        <button type="submit">Enviar Respostas</button>
+                    </form>
+            </fieldset>
         </section>
     </main>
     <footer id="bottom">

@@ -1,0 +1,29 @@
+/* customização de elementos básicos (normalmente tags)
+html, body, p, h1, h2, h3, h4, h5, h6, table, th, td
+Este arquivo pode ser reutilizado (com poucas modificações) 
+em outros projetos
+*/
+
+html {
+	font-size: 1.2rem;
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #1d3b6b;
+	color: var(--text);
+	text-align: center;
+}
+
+header {
+	word-break: break-word;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a:hover {
+	transform: scale(1.2);
+}
