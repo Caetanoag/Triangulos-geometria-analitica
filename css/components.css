@@ -21,6 +21,9 @@
 	padding: 10px;
 }
 
+/**
+	Mosaico com os itens internos
+*/
 .mosaico {
 	display: grid;
 	grid-template-columns: 1.2fr 1fr 1.2fr;
@@ -55,4 +58,70 @@
 .item-5 {
 	grid-column: 1;
 	grid-row: 3;
+}
+.triangle-creation {
+	max-width: 75%;
+	background-color: white;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+.triangle-creation svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.triangle-creation .frame-1 {
+	animation: frame1 5s steps(1) infinite;
+}
+.triangle-creation .frame-2 {
+	animation: frame2 5s steps(1) infinite;
+}
+.triangle-creation .frame-3 {
+	animation: frame3 5s steps(1) infinite;
+}
+.triangle-creation .frame-4 {
+	animation: frame4 5s steps(1) infinite;
+}
+.triangle-creation .frame-5 {
+	animation: frame5 5s steps(1) infinite;
+}
+
+@keyframes frame1 {
+	0%,
+	20% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@keyframes frame2 {
+	20%,
+	40% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@keyframes frame3 {
+	40%,
+	60% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@keyframes frame4 {
+	60%,
+	80% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@keyframes frame5 {
+	80%,
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
 }

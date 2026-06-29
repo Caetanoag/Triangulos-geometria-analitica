@@ -1,3 +1,4 @@
+<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> -->
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -61,6 +62,40 @@
                     <div class="item item-5"><img src="imgs/mosaico/04.webp" alt="Calculo do perimetro de um poligono de tres lados"></div>
                 </div>
             </section>
+            <div id="animation" class="triangle-creation">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-1">
+                    <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                </svg>
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-2">
+                    <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
+                </svg>
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-3">
+                    <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
+                    <line x1="173" y1="153" x2="27" y2="153" stroke="black" stroke-width="5" />
+                </svg>
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-4">
+                    <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
+                    <line x1="173" y1="153" x2="27" y2="153" stroke="black" stroke-width="5" />
+                    <line x1="27" y1="153" x2="100" y2="27" stroke="black" stroke-width="5" />
+                </svg>
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-5">
+                    <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
+                    <polygon points="100,27 173,153 27,153" fill="blue" stroke="black" stroke-width="5" />
+                </svg>
+            </div>
             <section id="area-por-coordenadas" class="section-math">
                 <h2>Área do Triângulo por Coordenadas</h2>
                 <p>Se conhecemos os vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃) no plano cartesiano, 
@@ -142,9 +177,13 @@
                 <img src="imgs/gallery/triangulo_escaleno.webp" alt="Triangulo escaleno"       loading="lazy" width="348" height="348">
                 <img src="imgs/gallery/triangulo_equilatero.webp" alt="Triangulo equilatero"   loading="lazy" width="348" height="348">
                 <img src="imgs/gallery/triangulo_isoceles.webp" alt="Triangulo isoceles"       loading="lazy" width="348" height="348">
-            </div>
-            
+            </div>  
+
+                <a href="#top">Voltar ao topo</a>
+        </section>
         <section class="forms" id="forms">
+
+            <img src="imgs/pitagoras.webp" loading="lazy" alt="Imagem de pitágoras, matemático grego" width="630" height="630">
             <div>
                 <h2>Formulário de Conhecimentos</h2>
                 <fieldset>
@@ -183,18 +222,16 @@
                         </form>
                 </fieldset>  
             </div>
-            <img src="imgs/pitagoras.webp" loading="lazy" alt="Imagem de pitágoras, matemático grego" width="630" height="453">
         </section>
         <section id="fontes" class="fontes">
-                <h2>Fontes</h2>
-                <div class="links">
-                    <p><a href="https://escolaeducacao.com.br/baricentro-de-um-triangulo/">Imagem 1</a></p>
-                    <p><a href="https://mundoeducacao.uol.com.br/matematica/pontos-notaveis-triangulo.htm">Imagem 2</a></p>
-                    <p><a href="https://br.neurochispas.com/geometria/como-encontrar-o-ortocentro-de-um-triangulo-passo-a-passo/">Imagem 3</a></p>
-                    <p><a href="https://conocelahistoria.com/wp-content/uploads/2018/08/historia-del-teorema-de-pitagoras-1.jpg">Pitágoras</a></p>
-                    <p><a href="https://www.webpegg.com/pt/webp-hyuki">Logo</a></p>
-                </div>
-            </section>
+            <h2>Fontes</h2>
+            <div class="links">
+                <p><a href="https://escolaeducacao.com.br/baricentro-de-um-triangulo/">Conteudo: Imagem 1</a></p>
+                <p><a href="https://mundoeducacao.uol.com.br/matematica/pontos-notaveis-triangulo.htm">Conteudo: Imagem 2</a></p>
+                <p><a href="https://br.neurochispas.com/geometria/como-encontrar-o-ortocentro-de-um-triangulo-passo-a-passo/">Conteudo: Imagem 3</a></p>
+                <p><a href="https://conocelahistoria.com/wp-content/uploads/2018/08/historia-del-teorema-de-pitagoras-1.jpg">Formulário: Pitágoras</a></p>
+                <p><a href="https://www.webpegg.com/pt/webp-hyuki">Logo</a></p>
+            </div>
             <a href="#top">Voltar ao topo</a>
         </section>
     </main>
