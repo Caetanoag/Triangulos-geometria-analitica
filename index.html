@@ -53,71 +53,73 @@
         <section id="main-section" class="main-section">
             <section id="area-por-coordenadas" class="section-math">
                 <h2>Área do Triângulo por Coordenadas</h2>
-                <p>Dado um triângulo com vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃) no plano cartesiano, 
-                    é possível calcular sua área sem medir lados ou ângulos — apenas com as 
-                    coordenadas dos vértices.</p>
+                <p>Se conhecemos os vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃) no plano cartesiano, 
+                    calcular a área dessa figura fica bem simples. Não precisamos medir segmentos ou 
+                    ângulos internos — basta usar os pares ordenados de cada canto.</p>
                 
                 <h3>Como calcular</h3>
-                    <p>A fórmula utiliza o conceito de determinante de uma matriz 3×3:</p>
-                    <p>A área é dada pelo módulo de:</p>
+                    <p>O cálculo matemático utiliza a ideia de determinante de uma matriz 3×3:</p>
+                    <p>A superfície total é dada pela metade do módulo de:</p>
                     <p class="math-expression">½ · |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|</p>
-                    <p>O valor absoluto garante que a área seja sempre positiva, 
-                        independente da ordem em que os vértices são listados.</p>
+                    <p>O uso do valor absoluto serve para eliminar resultados negativos. Assim, 
+                        a ordem com que listamos os pontos no sistema não altera o resultado final.</p>
                 <h3>Exemplo prático</h3>    
-                    <p>Considere o triângulo com vértices A(0, 0), B(4, 0) e C(0, 3):</p>
+                    <p>Imagine um polígono com vértices em A(0, 0), B(4, 0) e C(0, 3):</p>
                     <p class="math-expression">½ · |0(0 - 3) + 4(3 - 0) + 0(0 - 0)| = ½ · |12| = 6 unidades²</p>
             </section> 
             <section id="pontos-notaveis" class="section-math">
                 <h2>Pontos Notáveis do Triângulo</h2>
-                <p>Os pontos notáveis são pontos especiais obtidos a partir das retas notáveis de um triângulo. Com geometria analítica, 
-                    é possível calcular suas coordenadas exatas a partir dos vértices.</p>
+                <p>Cruzamentos de linhas especiais geram os chamados pontos notáveis. Usando a matemática analítica, 
+                    conseguimos achar a posição espacial exata de cada um deles de forma direta.</p>
                 <section id="baricentro">
                     <h3>Baricentro</h3>
-                    <p>O baricentro é o ponto de encontro das medianas do triângulo — segmentos que ligam cada vértice 
-                        ao ponto médio do lado oposto. Ele representa o centro de massa do triângulo.</p>
+                    <p>O baricentro surge do encontro das medianas da figura. Essas linhas unem cada quina 
+                        ao ponto médio da borda oposta. Ele funciona como o centro de gravidade do desenho.</p>
     
-                    <p>Dado um triângulo com vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃), o baricentro G é calculado por:</p>
+                    <p>Com os três pontos cartesianos conhecidos, determinamos a posição G através da média aritmética simples:</p>
 
                     <p class="math-expression">G = ((x₁ + x₂ + x₃) / 3, (y₁ + y₂ + y₃) / 3)</p>
-                    <p>Exemplo: Para A(0, 0), B(6, 0) e C(0, 6), o baricentro é G(2, 2).</p>
+                    <p>Exemplo prático: Se os cantos forem A(0, 0), B(6, 0) e C(0, 6), o centro de massa será G(2, 2).</p>
                     <img src="imgs/baricentro.webp" alt="Imagem representando o baricentro" loading="lazy">
                 </section>
                 <section id="circuncentro">
                     <h3>Circuncentro</h3>
-                    <p>O circuncentro é o ponto de encontro das mediatrizes do triângulo — retas perpendiculares a cada lado passando pelo seu ponto médio.
-                         É o centro da circunferência circunscrita ao triângulo.</p>
-                    <p>Para encontrá-lo analiticamente, resolve-se um sistema de equações formado pelas mediatrizes de dois lados quaisquer do triângulo.
-                         O circuncentro pode estar dentro, fora ou sobre o triângulo, dependendo do tipo.</p>
+                    <p>O circuncentro nasce no cruzamento das mediatrizes. Elas são linhas retas que dividem o meio de cada borda 
+                        fazendo um ângulo de 90 graus. Esse local marca o ponto central do círculo que envolve a forma por fora.</p>
+                    <p>Para achá-lo, montamos um sistema matemático combinando duas dessas retas perpendiculares. 
+                        A resposta final pode se situar na parte interna, externa ou exatamente sobre o traçado do polígono.</p>
                     <img src="imgs/circuncentro.webp" alt="Imagem representando o circuncentro" loading="lazy">
                 </section>
                 <section id="ortocentro">
                     <h3>Ortocentro</h3>
-                    <p>O ortocentro é o ponto de encontro das alturas do triângulo — segmentos perpendiculares a cada lado traçados a partir do vértice oposto.</p>
-                    <p>Analogamente ao circuncentro, encontra-se o ortocentro resolvendo o sistema formado pelas equações de 
-                        duas alturas. Em triângulos acutângulos está dentro, em obtusângulos está fora e em retângulos 
-                        coincide com o vértice do ângulo reto.</p>
+                    <p>O ortocentro representa a junção das três alturas do polígono. Alturas são trajetos que partem 
+                        de uma quina e atingem a base oposta de maneira perpendicular.</p>
+                    <p>O processo para localizá-lo é similar ao anterior: resolvemos um sistema unindo duas dessas equações de retas. 
+                        Sua localização muda conforme os ângulos: fica por dentro nos acutângulos, fora nos obtusângulos 
+                        e em cima do canto reto nos retângulos.</p>
                     <img src="imgs/ortocentro.webp" alt="Imagem representando o ortocentro" loading="lazy">
                 </section>
             </section>
             <section id="classificao-por-coordenadas" class="section-math">
                 <h2>Classificação do Triângulo por Coordenadas</h2>
-                    <p>Com as coordenadas dos vértices, é possível classificar qualquer triângulo usando apenas a fórmula da distância entre dois pontos:</p>
+                    <p>Sabendo as posições cartesianas, conseguimos categorizar qualquer formato de três pontas. 
+                        Usamos apenas a regra clássica de distância espacial:</p>
                     <p class="math-expression">d = √((x₂ - x₁)² + (y₂ - y₁)²)</p>
                 <h3>Quanto aos lados</h3>
-                    <p>Calculando os três lados do triângulo:</p>
+                    <p>Análise das arestas após descobrir o comprimento dos três caminhos:</p>
                     <ul>
-                        <li>Se os três lados são iguais → Equilátero</li>
-                        <li>Se dois lados são iguais → Isósceles</li>
-                        <li>Se todos os lados são diferentes → Escaleno</li>
+                        <li>Três medidas idênticas → Equilátero</li>
+                        <li>Duas medidas iguais → Isósceles</li>
+                        <li>Todos os tamanhos distintos → Escaleno</li>
                     </ul>  
                 <h3>Quanto aos ângulos</h3>
-                    <p>Após obter os comprimentos dos lados a, b e c, aplica-se o teorema de Pitágoras para classificar:</p>
+                    <p>Ao descobrir os tamanhos das três linhas principais (a, b e c), aplicamos um teste inspirado em Pitágoras:</p>
                     <ul>
                         <li>Se a² + b² &equals; c² → Retângulo</li>
                         <li>Se a² + b² &gt; c² → Acutângulo</li>
                         <li>Se a² + b² &lt; c² → Obtusângulo</li>
                     </ul>
-                    <p>Exemplo: Para A(0, 0), B(3, 0) e C(0, 4), os lados medem 3, 4 e 5. Como 3² + 4² = 5², o triângulo é retângulo e escaleno.</p>
+                    <p>Exemplo claro: Para os pontos A(0, 0), B(3, 0) e C(0, 4), os caminhos medem 3, 4 e 5 unidades. Como 3² + 4² resulta em 5², temos uma forma retangular e escalena.</p>
             </section>
             <a href="#top">Voltar ao topo</a>
         </section>
