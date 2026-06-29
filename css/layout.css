@@ -54,6 +54,7 @@ body ul {
 section {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 section a {
@@ -71,7 +72,6 @@ main .main-section {
 	margin-top: 1rem;
 	gap: 1rem;
 }
-
 .fontes {
 	align-items: center;
 	justify-content: center;
