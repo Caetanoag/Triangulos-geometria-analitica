@@ -3,7 +3,7 @@ Também define header, nav, main, footer, etc
 Este arquivo normalmente é único/específico de um projeto 
 e não é reutilizado (Exceto em sites com estrutura semelhante) */
 
-/* Topo fixado com sticky */
+
 header img {
 	width: clamp(3rem, 10vw, 8rem);
 	height: auto;
@@ -85,4 +85,24 @@ main .main-section {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1rem;
+}
+.forms {
+	display: flex;
+	gap: 1.2rem;
+	flex-direction: row;
+}
+.forms form {
+	display: flex;
+	flex-direction: column;
+}
+.forms img {
+	max-width: 50%;
+}
+@media (max-width: 768px) {
+	.forms {
+		flex-direction: column;
+	}
+	.forms img {
+		max-width: 100%;
+	}
 }

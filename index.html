@@ -22,8 +22,9 @@
         <a href="#main-section">Conteúdo</a>
         
         <a href="#gallery">Galeria</a>
-        
+        <a href="#forms">Formulario</a>
         <a href="#bottom">Sobre o autor</a>
+        
     </nav>
     <main>
         <section id="main-section" class="main-section">
@@ -120,11 +121,12 @@
             </section>
             <a href="#top">Voltar ao topo</a>
         </section>
-        <section>
-            <h2>Formulário de Conhecimentos</h2>
+        <section class="forms">
+            <div>
+                <h2>Formulário de Conhecimentos</h2>
             <fieldset>
                 <legend>Teste seus conhecimentos</legend>
-                    <form action="index.html">
+                    <form action="index.html" class="form">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required>
                     <br>
@@ -136,12 +138,15 @@
                     <br>
                         Quantos lados tem um triangulo?
                     <br>
+                    <div>
                         <label for="lados">3</label>
                         <input type="radio" name="lados" id="lados" value="3">
                         <label for="lados">4</label>
                         <input type="radio" name="lados" id="lados" value="4">
                         <label for="lados">12</label>
                         <input type="radio" name="lados" id="lados" value="12">
+                    </div>
+                        
                     <br>
                         <label for="soma-angulos">Qual a soma dos angulos internos de um triangulo?</label>
                     <br>
@@ -154,6 +159,9 @@
                         <button type="submit">Enviar Respostas</button>
                     </form>
             </fieldset>
+            
+            </div>
+            <img src="imgs/pitagoras.png" alt="Imagem de pitágoras, matemático grego">
         </section>
     </main>
     <footer id="bottom">
