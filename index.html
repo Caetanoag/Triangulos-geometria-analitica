@@ -1,13 +1,15 @@
-<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation -->
+<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation> -->
+
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Triangulos na Geometria Analitica | Aprenda a calcular</title>
+    <title>Triângulos na Geometria Analítica | Guia Prático</title>
     
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aprenda a calcular a área do triângulo por coordenadas cartesianas, classificar seus lados e ângulos e encontrar pontos notáveis como baricentro, circuncentro e ortocentro.">
+    <meta name="description" content="Aprenda geometria analítica. Calcule áreas por coordenadas, descubra o baricentro, circuncentro, ortocentro e classifique triângulos facilmente.">
     <meta name="author" content="Caetanoag">
 
     <meta property="og:title" content="Geometria Analitica">
@@ -23,7 +25,6 @@
     <meta name="revisit-after" content="1 day">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-
     <meta name="distribution" content="global">
 
     <link rel="canonical" href="https://caetanoag.github.io/Triangulos-geometria-analitica/">
@@ -62,26 +63,27 @@
                     <div class="item item-5"><img src="imgs/mosaico/04.webp" alt="Calculo do perimetro de um poligono de tres lados" width="348" height="348"></div>
                 </div>
             </section>
+            
             <div id="animation" class="triangle-creation">
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-1" aria-label="Animação frame 1: Três pontos soltos no plano">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-1" aria-label="Tres pontos soltos">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-2" aria-label="Animação frame 2: Primeira linha conectando dois pontos">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-2" aria-label="Primeira linha ligando pontos">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-3" aria-label="Animação frame 3: Segunda linha conectando a base">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-3" aria-label="Segunda linha ligando base">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
                     <line x1="173" y1="153" x2="27" y2="153" stroke="black" stroke-width="5" />
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-4" aria-label="Animação frame 4: Terceira linha fechando o contorno">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-4" aria-label="Terceira linha fechando contorno">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
@@ -89,74 +91,80 @@
                     <line x1="173" y1="153" x2="27" y2="153" stroke="black" stroke-width="5" />
                     <line x1="27" y1="153" x2="100" y2="27" stroke="black" stroke-width="5" />
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-5" aria-label="Animação frame 5: Triângulo preenchido com a cor azul">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-5" aria-label="Triangulo azul preenchido">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <polygon points="100,27 173,153 27,153" fill="blue" stroke="black" stroke-width="5" />
                 </svg>
             </div>
+
             <section id="area-por-coordenadas" class="section-math">
                 <h2>Área do Triângulo por Coordenadas</h2>
-                <p>Quando conhecemos as coordenadas cartesianas de cada vértice, calcular a área total vira uma tarefa simples. Não existe necessidade de descobrir ângulos internos ou medir manualmente cada lado usando réguas. O método analítico depende apenas dos valores numéricos que posicionam os cantos da figura no plano cartesiano.</p>
+                <p>A geometria analítica simplifica cálculos de áreas utilizando apenas pares ordenados mapeados. Não precisamos aplicar réguas, transferidores ou descobrir ângulos difíceis. Sabendo a posição exata de cada vértice cartesiano, conseguimos um resultado perfeito rapidamente.</p>
+                <p>Esse método matemático substitui cálculos geométricos demorados por uma operação direta. É uma alternativa incrível para exames, provas e sistemas de computação gráfica que processam mapas bidimensionais.</p>
                 
                 <h3>Como calcular</h3>
-                    <p>O procedimento matemático baseia-se na teoria dos determinantes aplicados em matrizes quadradas. Multiplicamos as posições cruzadas para encontrar um valor base.</p>
-                    <p>A superfície final equivale exatamente à metade do valor absoluto obtido nesta operação:</p>
+                    <p>O processo utiliza determinantes de matrizes. Multiplicamos os valores numéricos cruzados para gerar um número base regulador.</p>
+                    <p>A área final do polígono equivale exatamente à metade do valor absoluto gerado nessa conta:</p>
                     <p class="math-expression">½ · |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|</p>
-                    <p>Utilizar o módulo (valor absoluto) garante que nenhuma área resulte em número negativo. Desse modo, a ordem escolhida para listar os pontos geométricos jamais vai atrapalhar sua resposta final.</p>
+                    <p>Utilizamos módulos matemáticos para evitar resultados negativos involuntários. Graças a isso, escolher uma ordem diferente para listar pontos geométricos nunca altera sua resposta final.</p>
                 <h3>Exemplo prático</h3>    
-                    <p>Pense em uma figura com cantos localizados em A(0, 0), B(4, 0) e C(0, 3). Aplicando a fórmula passo a passo:</p>
+                    <p>Imagine uma figura com três vértices localizados em A(0, 0), B(4, 0) e C(0, 3). Veja a resolução passo a passo:</p>
                     <p class="math-expression">½ · |0(0 - 3) + 4(3 - 0) + 0(0 - 0)| = ½ · |12| = 6 unidades de área</p>
             </section> 
+
             <section id="pontos-notaveis" class="section-math">
                 <h2>Pontos Notáveis do Triângulo</h2>
-                <p>O cruzamento de retas específicas cria centros geométricos importantes. A geometria analítica permite localizar essas coordenadas exatas de forma direta e sem erros de desenho.</p>
+                <p>Retas internas geram intersecções chamadas pontos notáveis. O modelo analítico localiza tais centros espaciais usando equações comuns, eliminando imprecisões geométricas visuais.</p>
+                
                 <section id="baricentro">
                     <h3>Baricentro</h3>
-                    <p>Este ponto nasce onde as três medianas se encontram. Cada mediana liga um vértice qualquer até o meio do lado oposto. Ele funciona perfeitamente como o centro físico de gravidade ou equilíbrio daquela forma estável.</p>
-    
-                    <p>Conhecendo as localizações dos vértices, descobrimos a coordenada G calculando uma média aritmética simples entre os eixos:</p>
-
+                    <p>O baricentro surge no cruzamento das três medianas. Cada mediana conecta um vértice ao ponto médio do lado oposto. Ele representa o ponto central de equilíbrio ou gravidade da figura espacial.</p>
+                    <p>Com as coordenadas conhecidas, calculamos a posição do ponto G através de médias aritméticas simples nos dois eixos cartesianos:</p>
                     <p class="math-expression">G = ((x₁ + x₂ + x₃) / 3, (y₁ + y₂ + y₃) / 3)</p>
-                    <p>Exemplo real: Caso as quinas fiquem em A(0, 0), B(6, 0) e C(0, 6), o centro de massa resultante ocupará a posição G(2, 2).</p>
-                    <img src="imgs/baricentro.webp" alt="Imagem representando o baricentro" loading="lazy" width="348" height="348">
+                    <p>Exemplo prático: Havendo vértices em A(0, 0), B(6, 0) e C(0, 6), o centro gravitacional ocupará a posição exata G(2, 2).</p>
+                    <img src="imgs/baricentro.webp" alt="Representacao visual do ponto baricentro" loading="lazy" width="348" height="348">
                 </section>
+
                 <section id="circuncentro">
                     <h3>Circuncentro</h3>
-                    <p>Este centro surge na intersecção das mediatrizes, que são linhas perpendiculares traçadas bem no meio de cada segmento lateral. Ele determina o local exato para apoiar a ponta seca do compasso e desenhar uma circunferência perfeita ao redor, tocando todos os três vértices externos simultaneamente.</p>
-                    <p>Para calculá-lo, estruturamos equações lineares combinando essas retas guias. O resultado final pode se situar na área interna, na região externa ou precisamente sobre uma das linhas delimitadoras.</p>
-                    <img src="imgs/circuncentro.webp" alt="Imagem representando o circuncentro" loading="lazy" width="348" height="348">
+                    <p>O circuncentro surge no ponto de encontro das mediatrizes. Mediatrizes são linhas perpendiculares que dividem as faces do triângulo bem na metade. Esse local marca o centro exato da circunferência externa que envolve a forma matemática.</p>
+                    <p>Para encontrá-lo, resolvemos pequenos sistemas lineares cruzando essas retas. O local final pode se situar na área de dentro, na parte de fora ou sobre as linhas externas.</p>
+                    <img src="imgs/circuncentro.webp" alt="Representacao visual do ponto circuncentro" loading="lazy" width="348" height="348">
                 </section>
+
                 <section id="ortocentro">
                     <h3>Ortocentro</h3>
-                    <p>O ortocentro define o ponto comum onde as três alturas se cruzam. Lembramos que altura é aquele segmento reto que conecta um vértice à sua base oposta criando uma inclinação perfeita de noventa graus.</p>
-                    <p>A estratégia analítica para encontrá-lo exige resolver pequenos sistemas lineares que cruzam duas equações dessas alturas. Sua localização espacial varia bastante dependendo do formato estudado: aparece na parte interna em estruturas acutângulas, fora em formatos obtusângulos e exatamente sobre o vértice reto em modelos retângulos.</p>
-                    <img src="imgs/ortocentro.webp" alt="Imagem representando o ortocentro" loading="lazy" width="348" height="348">
+                    <p>O ortocentro define o cruzamento das três alturas. A altura conecta um vértice até a base oposta gerando um ângulo reto perfeito. Sua posição espacial muda conforme o tipo de triângulo estudado.</p>
+                    <p>Sua busca exige resolver sistemas com equações lineares dessas retas perpendiculares. Ele aparece dentro em estruturas acutângulas, fora em obtusângulas e em cima do próprio vértice nos triângulos retângulos.</p>
+                    <img src="imgs/ortocentro.webp" alt="Representacao visual do ponto ortocentro" loading="lazy" width="348" height="348">
                 </section>
             </section>
+
             <section id="classificao-por-coordenadas" class="section-math">
                 <h2>Classificação do Triângulo por Coordenadas</h2>
-                    <p>Avaliando os dados cartesianos, conseguimos categorizar qualquer polígono de três lados rapidamente. Aplicamos inicialmente a equação geral para distância entre dois pontos espaciais:</p>
+                    <p>Analisando dados do plano cartesiano, classificamos qualquer polígono de três pontas rapidamente. Usamos a fórmula tradicional de distância geométrica entre pontos:</p>
                     <p class="math-expression">d = √((x₂ - x₁)² + (y₂ - y₁)²)</p>
                 <h3>Análise dos lados</h3>
-                    <p>Verificação das dimensões gerais calculadas para os três segmentos que fecham o perímetro:</p>
+                    <p>Medimos a extensão dos três segmentos para descobrir a categoria do perímetro:</p>
                     <ul>
-                        <li>Três medidas perfeitamente idênticas qualificam um modelo Equilátero.</li>
-                        <li>Apenas dois comprimentos iguais definem um formato Isósceles.</li>
-                        <li>Três dimensões totalmente distintas resultam em um tipo Escaleno.</li>
+                        <li>Três lados iguais indicam um modelo Equilátero.</li>
+                        <li>Apenas dois lados idênticos caracterizam um formato Isósceles.</li>
+                        <li>Três comprimentos totalmente diferentes resultam em um tipo Escaleno.</li>
                     </ul>  
                 <h3>Análise dos ângulos internos</h3>
-                    <p>Após descobrir a extensão de cada segmento (nomeados aqui como a, b e c), fazemos um teste comparativo baseado no teorema pitagórico tradicional:</p>
+                    <p>Após descobrir o tamanho de cada reta lateral (denotadas como a, b e c), aplicamos o teste baseado na regra de Pitágoras:</p>
                     <ul>
-                        <li>Igualdade exata (a² + b² &equals; c²) confirma um Triângulo Retângulo.</li>
-                        <li>Soma maior (a² + b² &gt; c²) caracteriza um modelo Acutângulo.</li>
+                        <li>Igualdade perfeita (a² + b² = c²) confirma um Triângulo Retângulo.</li>
+                        <li>Soma maior (a² + b² &gt; c²) define uma forma Acutângula.</li>
                         <li>Soma menor (a² + b² &lt; c²) demonstra um tipo Obtusângulo.</li>
                     </ul>
-                    <p>Exemplo demonstrativo: Dados os pontos cartesianos A(0, 0), B(3, 0) e C(0, 4), as distâncias encontradas valem respectivamente 3, 4 e 5 unidades. Sabendo que a soma dos quadrados 3² + 4² equivale a 5², o sistema comprova uma estrutura retangular e escalena ao mesmo tempo.</p>
+                    <p>Exemplo prático: Dados os pontos cartesianos A(0, 0), B(3, 0) e C(0, 4), as distâncias encontradas medem 3, 4 e 5 unidades. Como a soma dos quadrados 3² + 4² resulta em 5², o sistema valida uma estrutura retângulo-escalena.</p>
             </section>
             <a href="#top">Voltar ao topo</a>
         </section>
+
         <section id="gallery" class="galeria">
             <h2>Galeria de Imagens geradas no Geogebra</h2>
             <div class="gallery">
@@ -169,6 +177,7 @@
             </div>  
             <a href="#top">Voltar ao topo</a>
         </section>
+
         <section class="forms" id="forms">
             <img src="imgs/pitagoras.webp" loading="lazy" alt="Imagem de pitágoras, matemático grego" width="630" height="630">
             <div>
@@ -209,6 +218,7 @@
                 </fieldset>  
             </div>
         </section>
+
         <section id="fontes" class="fontes">
             <h2>Fontes</h2>
             <div class="links">
