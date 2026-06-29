@@ -86,22 +86,9 @@ main .main-section {
 	gap: 1rem;
 }
 .forms {
-	display: flex;
-	gap: 1.2rem;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
 }
 .forms form {
-	display: flex;
-	flex-direction: column;
-}
-.forms img {
-	max-width: 50%;
-}
-@media (max-width: 768px) {
-	.forms {
-		flex-direction: column;
-	}
-	.forms img {
-		max-width: 100%;
-	}
+	display: grid;
 }
