@@ -24,15 +24,17 @@
 
 
     <meta name="distribution" content="global">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" display="swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" display="swap" crossorigin>
     <link rel="stylesheet" href="css/main.css">
+
+    
 </head>
 <body>
     <header id="top">
-        <img src="imgs/logo.png" alt="triangulo com um triangulo menor dentro">
+        <img src="imgs/logo.png" alt="triangulo com um triangulo menor dentro" fetchpriority="high" rel="preconnect">
         <div class="header-title">
-            <h1>Geometria Analitica</h1>
+            <h1>Triangulos na Geometria Analitica</h1>
             <h2>Triangulos</h2>    
         </div>
     </header>
@@ -148,13 +150,13 @@
                     <legend>Teste seus conhecimentos</legend>
                         <form action="index.html" class="form">
                             <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required>
+                            <input type="text" id="nome" name="nome" placeholder="nome" required>
                         <br>
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email"  placeholder="email" required>
                         <br>
                             <label for="telefone">Telefone:</label>
-                            <input type="tel" name="telefone" id="telefone">
+                            <input type="tel" name="telefone"  placeholder="telefone" id="telefone">
                         <br>
                             Quantos lados tem um triangulo?
                         <br>

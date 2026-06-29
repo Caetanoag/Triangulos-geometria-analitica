@@ -3,7 +3,6 @@ Também define header, nav, main, footer, etc
 Este arquivo normalmente é único/específico de um projeto 
 e não é reutilizado (Exceto em sites com estrutura semelhante) */
 
-
 header img {
 	width: clamp(3rem, 10vw, 8rem);
 	height: auto;
@@ -40,7 +39,7 @@ nav {
 
 nav a {
 	background-color: var(--buttons);
-	color: var(--text);
+	color: #000000;
 	padding: 1rem;
 	text-decoration: none;
 	border-radius: 1rem;
