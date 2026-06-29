@@ -1,4 +1,4 @@
-<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation-->
+<!-- biome-ignore-all lint/a11y/noSvgWithoutTitle: <explanation -->
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -7,7 +7,7 @@
     
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Propriedades dos Triangulos na geometria">
+    <meta name="description" content="Aprenda a calcular a área do triângulo por coordenadas cartesianas, classificar seus lados e ângulos e encontrar pontos notáveis como baricentro, circuncentro e ortocentro.">
     <meta name="author" content="Caetanoag">
 
     <meta property="og:title" content="Geometria Analitica">
@@ -18,11 +18,11 @@
     <meta property="og:url" content="https://caetanoag.github.io/Triangulos-geometria-analitica/">
     <meta property="og:type" content="website">
     
+    <meta name="twitter:card" content="summary_large_image">
 
     <meta name="revisit-after" content="1 day">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-
 
     <meta name="distribution" content="global">
 
@@ -42,48 +42,46 @@
             <h2>Triangulos</h2>    
         </div>
     </header>
-    <nav>
+    <nav aria-label="Navegação principal">
         <a href="#top">Início</a>
         <a href="#mosaico">Mosaico</a>
         <a href="#main-section">Conteúdo</a>
-        
         <a href="#gallery">Galeria</a>
         <a href="#forms">Formulario</a>
         <a href="#bottom">Sobre o autor</a>
-        
     </nav>
     <main>
         <section id="main-section" class="main-section">
             <section id="mosaico">
-                <h2>Mosaico</h2>
+                <h2>Mosaico Visual</h2>
                 <div class="mosaico">
-                    <div class="item item-1"><img src="imgs/mosaico/00.webp" alt="Triangulo com seus vertices em evidencia"></div>
-                    <div class="item item-2"><img src="imgs/mosaico/01.webp" alt="Triangulo construido no plano cartesiano"></div>
-                    <div class="item item-3"><img src="imgs/mosaico/02.webp" alt="Triangulo ABC com o ponto central AB marcado e denominado X"></div>
-                    <div class="item item-4"><img src="imgs/mosaico/03.webp" alt="Triangulo com figura dentro desenhada a partir de pontos no lados"></div>
-                    <div class="item item-5"><img src="imgs/mosaico/04.webp" alt="Calculo do perimetro de um poligono de tres lados"></div>
+                    <div class="item item-1"><img src="imgs/mosaico/00.webp" alt="Triangulo com seus vertices em evidencia" width="348" height="348"></div>
+                    <div class="item item-2"><img src="imgs/mosaico/01.webp" alt="Triangulo construido no plano cartesiano" width="348" height="348"></div>
+                    <div class="item item-3"><img src="imgs/mosaico/02.webp" alt="Triangulo ABC com o ponto central AB marcado e denominado X" width="348" height="348"></div>
+                    <div class="item item-4"><img src="imgs/mosaico/03.webp" alt="Triangulo com figura dentro desenhada a partir de pontos no lados" width="348" height="348"></div>
+                    <div class="item item-5"><img src="imgs/mosaico/04.webp" alt="Calculo do perimetro de um poligono de tres lados" width="348" height="348"></div>
                 </div>
             </section>
             <div id="animation" class="triangle-creation">
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-1">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-1" aria-label="Animação frame 1: Três pontos soltos no plano">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-2">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-2" aria-label="Animação frame 2: Primeira linha conectando dois pontos">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-3">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-3" aria-label="Animação frame 3: Segunda linha conectando a base">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <line x1="100" y1="27" x2="173" y2="153" stroke="black" stroke-width="5" />
                     <line x1="173" y1="153" x2="27" y2="153" stroke="black" stroke-width="5" />
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-4">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-4" aria-label="Animação frame 4: Terceira linha fechando o contorno">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
@@ -91,7 +89,7 @@
                     <line x1="173" y1="153" x2="27" y2="153" stroke="black" stroke-width="5" />
                     <line x1="27" y1="153" x2="100" y2="27" stroke="black" stroke-width="5" />
                 </svg>
-                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-5">
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" class="frame-5" aria-label="Animação frame 5: Triângulo preenchido com a cor azul">
                     <circle cx="100" cy="27" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="173" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
                     <circle cx="27" cy="153" r="5" fill="black" stroke="black" stroke-width="3"/>
@@ -100,73 +98,62 @@
             </div>
             <section id="area-por-coordenadas" class="section-math">
                 <h2>Área do Triângulo por Coordenadas</h2>
-                <p>Se conhecemos os vértices A(x₁, y₁), B(x₂, y₂) e C(x₃, y₃) no plano cartesiano, 
-                    calcular a área dessa figura fica bem simples. Não precisamos medir segmentos ou 
-                    ângulos internos — basta usar os pares ordenados de cada canto.</p>
+                <p>Quando conhecemos as coordenadas cartesianas de cada vértice, calcular a área total vira uma tarefa simples. Não existe necessidade de descobrir ângulos internos ou medir manualmente cada lado usando réguas. O método analítico depende apenas dos valores numéricos que posicionam os cantos da figura no plano cartesiano.</p>
                 
                 <h3>Como calcular</h3>
-                    <p>O cálculo matemático utiliza a ideia de determinante de uma matriz 3×3:</p>
-                    <p>A superfície total é dada pela metade do módulo de:</p>
+                    <p>O procedimento matemático baseia-se na teoria dos determinantes aplicados em matrizes quadradas. Multiplicamos as posições cruzadas para encontrar um valor base.</p>
+                    <p>A superfície final equivale exatamente à metade do valor absoluto obtido nesta operação:</p>
                     <p class="math-expression">½ · |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|</p>
-                    <p>O uso do valor absoluto serve para eliminar resultados negativos. Assim, 
-                        a ordem com que listamos os pontos no sistema não altera o resultado final.</p>
+                    <p>Utilizar o módulo (valor absoluto) garante que nenhuma área resulte em número negativo. Desse modo, a ordem escolhida para listar os pontos geométricos jamais vai atrapalhar sua resposta final.</p>
                 <h3>Exemplo prático</h3>    
-                    <p>Imagine um polígono com vértices em A(0, 0), B(4, 0) e C(0, 3):</p>
-                    <p class="math-expression">½ · |0(0 - 3) + 4(3 - 0) + 0(0 - 0)| = ½ · |12| = 6 unidades²</p>
+                    <p>Pense em uma figura com cantos localizados em A(0, 0), B(4, 0) e C(0, 3). Aplicando a fórmula passo a passo:</p>
+                    <p class="math-expression">½ · |0(0 - 3) + 4(3 - 0) + 0(0 - 0)| = ½ · |12| = 6 unidades de área</p>
             </section> 
             <section id="pontos-notaveis" class="section-math">
                 <h2>Pontos Notáveis do Triângulo</h2>
-                <p>Cruzamentos de linhas especiais geram os chamados pontos notáveis. Usando a matemática analítica, 
-                    conseguimos achar a posição espacial exata de cada um deles de forma direta.</p>
+                <p>O cruzamento de retas específicas cria centros geométricos importantes. A geometria analítica permite localizar essas coordenadas exatas de forma direta e sem erros de desenho.</p>
                 <section id="baricentro">
                     <h3>Baricentro</h3>
-                    <p>O baricentro surge do encontro das medianas da figura. Essas linhas unem cada quina 
-                        ao ponto médio da borda oposta. Ele funciona como o centro de gravidade do desenho.</p>
+                    <p>Este ponto nasce onde as três medianas se encontram. Cada mediana liga um vértice qualquer até o meio do lado oposto. Ele funciona perfeitamente como o centro físico de gravidade ou equilíbrio daquela forma estável.</p>
     
-                    <p>Com os três pontos cartesianos conhecidos, determinamos a posição G através da média aritmética simples:</p>
+                    <p>Conhecendo as localizações dos vértices, descobrimos a coordenada G calculando uma média aritmética simples entre os eixos:</p>
 
                     <p class="math-expression">G = ((x₁ + x₂ + x₃) / 3, (y₁ + y₂ + y₃) / 3)</p>
-                    <p>Exemplo prático: Se os cantos forem A(0, 0), B(6, 0) e C(0, 6), o centro de massa será G(2, 2).</p>
+                    <p>Exemplo real: Caso as quinas fiquem em A(0, 0), B(6, 0) e C(0, 6), o centro de massa resultante ocupará a posição G(2, 2).</p>
                     <img src="imgs/baricentro.webp" alt="Imagem representando o baricentro" loading="lazy" width="348" height="348">
                 </section>
                 <section id="circuncentro">
                     <h3>Circuncentro</h3>
-                    <p>O circuncentro nasce no cruzamento das mediatrizes. Elas são linhas retas que dividem o meio de cada borda 
-                        fazendo um ângulo de 90 graus. Esse local marca o ponto central do círculo que envolve a forma por fora.</p>
-                    <p>Para achá-lo, montamos um sistema matemático combinando duas dessas retas perpendiculares. 
-                        A resposta final pode se situar na parte interna, externa ou exatamente sobre o traçado do polígono.</p>
+                    <p>Este centro surge na intersecção das mediatrizes, que são linhas perpendiculares traçadas bem no meio de cada segmento lateral. Ele determina o local exato para apoiar a ponta seca do compasso e desenhar uma circunferência perfeita ao redor, tocando todos os três vértices externos simultaneamente.</p>
+                    <p>Para calculá-lo, estruturamos equações lineares combinando essas retas guias. O resultado final pode se situar na área interna, na região externa ou precisamente sobre uma das linhas delimitadoras.</p>
                     <img src="imgs/circuncentro.webp" alt="Imagem representando o circuncentro" loading="lazy" width="348" height="348">
                 </section>
                 <section id="ortocentro">
                     <h3>Ortocentro</h3>
-                    <p>O ortocentro representa a junção das três alturas do polígono. Alturas são trajetos que partem 
-                        de uma quina e atingem a base oposta de maneira perpendicular.</p>
-                    <p>O processo para localizá-lo é similar ao anterior: resolvemos um sistema unindo duas dessas equações de retas. 
-                        Sua localização muda conforme os ângulos: fica por dentro nos acutângulos, fora nos obtusângulos 
-                        e em cima do canto reto nos retângulos.</p>
+                    <p>O ortocentro define o ponto comum onde as três alturas se cruzam. Lembramos que altura é aquele segmento reto que conecta um vértice à sua base oposta criando uma inclinação perfeita de noventa graus.</p>
+                    <p>A estratégia analítica para encontrá-lo exige resolver pequenos sistemas lineares que cruzam duas equações dessas alturas. Sua localização espacial varia bastante dependendo do formato estudado: aparece na parte interna em estruturas acutângulas, fora em formatos obtusângulos e exatamente sobre o vértice reto em modelos retângulos.</p>
                     <img src="imgs/ortocentro.webp" alt="Imagem representando o ortocentro" loading="lazy" width="348" height="348">
                 </section>
             </section>
             <section id="classificao-por-coordenadas" class="section-math">
                 <h2>Classificação do Triângulo por Coordenadas</h2>
-                    <p>Sabendo as posições cartesianas, conseguimos categorizar qualquer formato de três pontas. 
-                        Usamos apenas a regra clássica de distância espacial:</p>
+                    <p>Avaliando os dados cartesianos, conseguimos categorizar qualquer polígono de três lados rapidamente. Aplicamos inicialmente a equação geral para distância entre dois pontos espaciais:</p>
                     <p class="math-expression">d = √((x₂ - x₁)² + (y₂ - y₁)²)</p>
-                <h3>Quanto aos lados</h3>
-                    <p>Análise das arestas após descobrir o comprimento dos três caminhos:</p>
+                <h3>Análise dos lados</h3>
+                    <p>Verificação das dimensões gerais calculadas para os três segmentos que fecham o perímetro:</p>
                     <ul>
-                        <li>Três medidas idênticas → Equilátero</li>
-                        <li>Duas medidas iguais → Isósceles</li>
-                        <li>Todos os tamanhos distintos → Escaleno</li>
+                        <li>Três medidas perfeitamente idênticas qualificam um modelo Equilátero.</li>
+                        <li>Apenas dois comprimentos iguais definem um formato Isósceles.</li>
+                        <li>Três dimensões totalmente distintas resultam em um tipo Escaleno.</li>
                     </ul>  
-                <h3>Quanto aos ângulos</h3>
-                    <p>Ao descobrir os tamanhos das três linhas principais (a, b e c), aplicamos um teste inspirado em Pitágoras:</p>
+                <h3>Análise dos ângulos internos</h3>
+                    <p>Após descobrir a extensão de cada segmento (nomeados aqui como a, b e c), fazemos um teste comparativo baseado no teorema pitagórico tradicional:</p>
                     <ul>
-                        <li>Se a² + b² &equals; c² → Retângulo</li>
-                        <li>Se a² + b² &gt; c² → Acutângulo</li>
-                        <li>Se a² + b² &lt; c² → Obtusângulo</li>
+                        <li>Igualdade exata (a² + b² &equals; c²) confirma um Triângulo Retângulo.</li>
+                        <li>Soma maior (a² + b² &gt; c²) caracteriza um modelo Acutângulo.</li>
+                        <li>Soma menor (a² + b² &lt; c²) demonstra um tipo Obtusângulo.</li>
                     </ul>
-                    <p>Exemplo claro: Para os pontos A(0, 0), B(3, 0) e C(0, 4), os caminhos medem 3, 4 e 5 unidades. Como 3² + 4² resulta em 5², temos uma forma retangular e escalena.</p>
+                    <p>Exemplo demonstrativo: Dados os pontos cartesianos A(0, 0), B(3, 0) e C(0, 4), as distâncias encontradas valem respectivamente 3, 4 e 5 unidades. Sabendo que a soma dos quadrados 3² + 4² equivale a 5², o sistema comprova uma estrutura retangular e escalena ao mesmo tempo.</p>
             </section>
             <a href="#top">Voltar ao topo</a>
         </section>
@@ -180,11 +167,9 @@
                 <img src="imgs/gallery/triangulo_equilatero.webp" alt="Triangulo equilatero"   loading="lazy" width="348" height="348">
                 <img src="imgs/gallery/triangulo_isoceles.webp" alt="Triangulo isoceles"       loading="lazy" width="348" height="348">
             </div>  
-
-                <a href="#top">Voltar ao topo</a>
+            <a href="#top">Voltar ao topo</a>
         </section>
         <section class="forms" id="forms">
-
             <img src="imgs/pitagoras.webp" loading="lazy" alt="Imagem de pitágoras, matemático grego" width="630" height="630">
             <div>
                 <h2>Formulário de Conhecimentos</h2>
@@ -210,7 +195,6 @@
                             <label for="lados-12">12</label>
                             <input type="radio" name="lados" id="lados-12" value="12">
                         </div>
-                            
                         <br>
                             <label for="soma-angulos">Qual a soma dos angulos internos de um triângulo?</label>
                         <br>
@@ -242,7 +226,5 @@
         <p>2025311434</p>
         <p><a href="https://github.com/caetanoag">Github</a></p>
     </footer>
-    
-
 </body>
 </html>
